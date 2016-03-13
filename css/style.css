@@ -3,9 +3,16 @@ body {
   background: white;
 }
 
+.main-header {
+  height: 528px;
+  background: #fff url('../img/DowntownLouisville1500x528.jpg') no-repeat center;
+  background-size: contain;
+  background-position-y: 155%;
+}
+
 .nav {
   margin-top: 50px;
-  margin-right: 25px;
+  font-size: 14px;
 }
 
 a:link {
@@ -20,16 +27,22 @@ a:hover, a:focus {
     background: #000;
 }
 
+a {
+    color: #000;
+    font-weight:bold;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;;
 }
 
-.container2 {
-	padding: 1px;
-	background: #fff;
-  border-radius: 5px;
-	margin: 20px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+#section {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+h1 {
+  color: #86592d;
 }
 
 .item {
@@ -40,11 +53,10 @@ a:hover, a:focus {
 	border-radius: 3px;
 }
 
-footer{
+#footer {
   font-size: 11px;
   font-style: italic;
+  padding-left: 25px;
+  padding-top: 20px;
   width: 1200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #000000;
 }
