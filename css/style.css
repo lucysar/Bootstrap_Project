@@ -7,7 +7,7 @@ body {
   height: 528px;
   background: #fff url('../img/DowntownLouisville1500x528.jpg') no-repeat center;
   background-size: contain;
-  background-position-y: 155%;
+  clear: both;
 }
 
 .nav {
@@ -16,9 +16,8 @@ body {
 }
 
 a:link {
-  font-size: 1.1em;
+  font-size: 1.025em;
   font-weight: bold;
-  padding: 10px;
   text-decoration: none;
 }
 
@@ -28,8 +27,9 @@ a:hover, a:focus {
 }
 
 a {
-    color: #000;
-    font-weight:bold;
+    color: #86592d;
+    border-radius: 15px;
+    padding: 0px;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -45,6 +45,13 @@ h1 {
   color: #86592d;
 }
 
+#subheading {
+  color: #86592d;
+  font-weight: bolder;
+  font-size: 1.25em;
+}
+
+
 .item {
 	color: #fff;
 	padding: 15px;
@@ -59,4 +66,174 @@ h1 {
   padding-left: 25px;
   padding-top: 20px;
   width: 1200px;
+}
+
+/*CSS styling for forms*/
+/* below line is write to use google font online  */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+div#main{
+  width: 830px;
+  height: 650px;
+  margin: 0px auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+div#form_sample{
+  text-align:center;
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 0px 50px 15px;
+  margin-top:20px;
+  box-shadow: 0 0 15px;
+  border-radius: 6px;
+  float:left;
+}
+
+#main h1{
+  margin-top:40px;
+}
+
+hr{
+  margin-top:-5px;
+}
+
+label{
+  float: left;
+  font-size: 16px;
+}
+
+input[type="text"]{
+  width:100%;
+  margin-top:10px;
+  height: 35px;
+  margin-bottom: 25px;
+  padding:10px;
+}
+
+textarea{
+  width:100%;
+  border:3px solid #86592d;
+  padding:10px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  height: 100px;
+  resize:none;
+}
+
+input[type="submit"]{
+  width:100%;
+  padding: 10px 45px;
+  background-color: #86592d;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*Style settings for form on contact us page*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+#page-wrapper {
+  width: 640px;
+  background: #FFFFFF;
+  padding: 1em;
+  margin: 1em auto;
+  border-top: 5px solid #86592d;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.field {
+  margin-right: 100px;
+  margin-left: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #86592d;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #86592d;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8em;
+  background: #86592d;
+  border-bottom: 1px solid #fff;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #86592d;
+  border: 1px solid #86592d;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
 }

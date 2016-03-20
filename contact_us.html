@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/flexbox.css">
   </head>
   <body>
         <div class="col-md-4">
@@ -29,23 +28,39 @@
     </div>
     <header id="top" class="main-header"></header>
     <div id="section">
-      <h1>Problem Solving is Our Focus</h1>
-        <h4>Our firm specializes in real estate law, business consultation and litigation.
-          Whether it is the review of a purchase  agreement  or  a  complex  litigation  matter,
-          we  know  real  estate  and  small  business.  We understand  the  demands  of  the  management
-          and  ownership  and  the  law’s  impact  and  influence  on  real property and small business.<br></br>
-          Our firm can assist a client in need of:
+      <h1>Contact Us</h1>
+        <h3>Ronald B. Fadel, Attorney at Law</h3>
+          <h4>2525 Nelson Miller Parkway Suite 205<br>
+          Louisville, KY 40223<br></br>
+          <strong>Phone:</strong> (502) 254.9544<br></br>
+          <strong>Facsimile:</strong> (502) 254.9547<br></br>
+          <strong>Email:</strong> <a href="mailto:ron@ronfadel.com">Email Us</a>
         </h4>
     </div>
-        <ul>
-            <li>Contract and Lease Review</li>
-            <li>Breach of Contract Litigation</li>
-            <li>Business Tort Litigation</li>
-            <li>Real Estate Litigation Including Disputes and Evictions</li>
-            <li>Breach of Contract Litigation</li>
-            <li>Strategic Business Consulting</li>
-        </ul>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <div id="form-messages"></div>
+    <form id="ajax-contact" method="post" action="mailer.php">
+    <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="app.js"></script>
+<!--End mc_embed_signup--><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
