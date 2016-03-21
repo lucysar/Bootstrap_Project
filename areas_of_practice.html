@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/flexbox.css">
   </head>
   <body>
         <div class="col-md-4">
@@ -30,46 +29,72 @@
     <header id="top" class="main-header"></header>
     <div id="section">
       <h1>Areas of Practice</h1>
-        <p><div id="subheading">CONTRACT AND LEASE REVIEW:</div>
-          Many  businesses  and  individuals  make  the  critical  mistake  of signing  documents  without  reading
-          them  thoroughly.    Often  those  that  do  carefully  read documents prior to execution, do not understand
-          all the legal ramifications arising out of the language contained in a contract or other binding document.
-          The very best use of a lawyer is before  a  legal  problem  arises.    Attorney  fees  for  consultation
-          and  advise  prior  to  contract execution is exponentially smaller than fees associated with resolving
-          litigation arising out of a breach of contract claim. Our firm can provide opinion letters and sage advise
-          regarding the ramifications of the language contained in any contract whether it is a lease, insurance policy
-          and other contract.<br></br>
-
-          <div id="subheading">CONTRACT AND LEASE DRAFTING:</div>The  corollary  of  contract  review  if  contract  drafting.  Often  the
-          party who  drafts  the  contract is  the  one receiving the  benefit of better terms  and conditions. Our
-          firm  can  prepare  contracts  for  business  acquisitions,  property  purchases  and  leases arrangements.<br></br>
-
-          <div id="subheading">BREACH OF CONTRACT, BUSINESS TORT, AND REAL ESTATE LITIGATION:</div> If,  in  the  unfortunate  event,
-          litigation becomes  inevitable our firm has  more than 20 years litigation experience. We take great  care  to
-          insure  our  clients  are  given  the  best  representation  possible  by  insuring  that thorough  legal
-          research and  vigorous  motion practice  back  our client’s  positions before any court of law.<br></br>
-
-          <div id="subheading">BUSINESS INCORPORATION AND FORMATION:</div> Our firm has more than 20  years experience forming limited
-          liability  companies,C-  Corporations,  S-Corporations  and not  for  profit  entities.  We carefully
-          advise  our  clients  as  to  the  best  business  entity  to  utilize  to  meet  their  needs  and then
-          proceed  to  prepare  the  necessary documents  and  file  them with  the  appropriate governmental entity
-          to ensure limited liability.<br></br>
-
-          <div id="subheading">STRATEGIC BUSINESS CONSULTING:</div>  Our firm has more than 25 years business
-          experience forming, growing   and   maintaining   successful   businesses.   This   experience   allows
-          our   staff   to emphasize with small business owners in need of good legal guidance.
-          Often lawyers do not understand  the  challenges  faced  by  entrepreneurs.
-          Our  staff  does  because  our  lawyers  are also  entrepreneurs  and  they  fully  understand  the
-          demands  and  challenges  of  starting  and growing a business.
-        </p>
-    </div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="">
+  <form>
+    <h2>Click the Practice Area You Want to Learn About:</h2>
+    <label for="contract_and_lease_review">CONTRACT AND LEASE REVIEW</label>
+    <input type="radio" ng-model="myVar" value="contract" id="contract_and_lease_review">
+    <label for="contract_and_lease_drafting">CONTRACT AND LEASE DRAFTING</label>
+    <input type="radio" ng-model="myVar" value="drafting" id="contract_and_lease_drafting">
+    <label for="breach_of_contract_business_tort_realestate">BREACH OF CONTRACT, BUSINESS TORT, AND REAL ESTATE LITIGATION</label>
+    <input type="radio" ng-model="myVar" value="breach" id="breach_of_contract_business_tort_realestate">
+    <label for="business_incorporation">BUSINESS INCORPORATION AND FORMATION</label>
+    <input type="radio" ng-model="myVar" value="incorporation" id="business_incorporation">
+    <label for="business_consulting">BUSINESS CONSULTING</label>
+    <input type="radio" ng-model="myVar" value="consulting" id="business_consulting">
+  </form>
+<div ng-switch="myVar">
+  <div ng-switch-when="contract">
+     <h3>CONTRACT AND LEASE REVIEW</h3>
+     <p>Many  businesses  and  individuals  make  the  critical  mistake  of signing  documents  without  reading
+     them  thoroughly.    Often  those  that  do  carefully  read documents prior to execution, do not understand
+     all the legal ramifications arising out of the language contained in a contract or other binding document.
+     The very best use of a lawyer is before  a  legal  problem  arises.    Attorney  fees  for  consultation
+     and  advise  prior  to  contract execution is exponentially smaller than fees associated with resolving
+     litigation arising out of a breach of contract claim. Our firm can provide opinion letters and sage advise
+     regarding the ramifications of the language contained in any contract whether it is a lease, insurance policy
+     and other contract.</p>
+  </div>
+  <div ng-switch-when="drafting">
+     <h3>CONTRACT AND LEASE DRAFTING</h3>
+     <p>The  corollary  of  contract  review  if  contract  drafting.  Often  the
+     party who  drafts  the  contract is  the  one receiving the  benefit of better terms  and conditions. Our
+     firm  can  prepare  contracts  for  business  acquisitions,  property  purchases  and  leases arrangements.</p>
+  </div>
+  <div ng-switch-when="breach">
+     <h3>BREACH OF CONTRACT, BUSINESS TORT, AND REAL ESTATE LITIGATION</h3>
+     <p>If,  in  the  unfortunate  event,
+     litigation becomes  inevitable our firm has  more than 20 years litigation experience. We take great  care  to
+     insure  our  clients  are  given  the  best  representation  possible  by  insuring  that thorough  legal
+     research and  vigorous  motion practice  back  our client’s  positions before any court of law.</p>
+  </div>
+  <div ng-switch-when="incorporation">
+     <h3>BUSINESS INCORPORATION AND FORMATION</h3>
+     <p>Our firm has more than 20  years experience forming limited
+     liability  companies,C-  Corporations,  S-Corporations  and not  for  profit  entities.  We carefully
+     advise  our  clients  as  to  the  best  business  entity  to  utilize  to  meet  their  needs  and then
+     proceed  to  prepare  the  necessary documents  and  file  them with  the  appropriate governmental entity
+     to ensure limited liability.</p>
+  </div>
+  <div ng-switch-when="consulting">
+     <h3>STRATEGIC BUSINESS CONSULTING</h3>
+     <p>Our firm has more than 25 years business
+     experience forming, growing   and   maintaining   successful   businesses.   This   experience   allows
+     our   staff   to emphasize with small business owners in need of good legal guidance.
+     Often lawyers do not understand  the  challenges  faced  by  entrepreneurs.
+     Our  staff  does  because  our  lawyers  are also  entrepreneurs  and  they  fully  understand  the
+     demands  and  challenges  of  starting  and growing a business.</p>
+  </div>
+</div>
+</body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <div id="footer">
       <p>&copy; 2016 Ron Fadel, Attorney at Law</p>
-      <p>The information you obtain at this site is not, nor is it intended to be, legal advice.  <strong>THIS IS AN ADVERTISEMENT.</strong>  You should consult an attorney for individual advice regarding your own situation. Read complete<a href="#">disclaimer.</a></p>
+      <p>The information you obtain at this site is not, nor is it intended to be, legal advice.  <strong>THIS IS AN ADVERTISEMENT.</strong>  You should consult an attorney for individual advice regarding your own situation.</p>
     </div>
   </body>
 </html>
